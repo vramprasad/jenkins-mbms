@@ -23,4 +23,18 @@ pipeline {
         }
     }
 
+    post {
+        always {
+            echo "Always executed"
+        }
+
+        success {
+            echo "Build is super awesome success"
+        }
+
+        failure {
+            echo "On no....."
+        }
+    }
+
 }
